@@ -9,6 +9,10 @@
 </head>
 <body>
   <header class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="video-hero.mp4" type="video/mp4" />
+      Votre navigateur ne prend pas en charge la vidéo.
+    </video>
     <div class="overlay">
       <div class="branding">
         <img src="livraison_Samarcande-2couleur-vecto-30.jpg" alt="Logo Samarcande" class="logo" />
@@ -21,42 +25,51 @@
   <main>
     <section>
       <h2>Présentation</h2>
-      <p>Samarcande Capital est une société française spécialisée dans le financement et le développement de projets logistiques et immobiliers durables...</p>
+      <p>Samarcande Capital est une société française spécialisée dans le financement et le développement de projets logistiques et immobiliers durables. Filiale du groupe ICEBERG BKG, elle structure des opérations à forte valeur ajoutée, au croisement de la décarbonation, de l’économie circulaire et de la transition énergétique.</p>
+    </section>
+
+    <section class="with-image">
+      <div class="image-left">
+        <img src="A5F36305-C0A5-4FA9-8357-A4538CE5905C.JPG" alt="Méthodologie" />
+      </div>
+      <div class="text-right">
+        <h2>Méthodologie</h2>
+        <ul>
+          <li>Structuration de projet : montage financier, stratégie foncière, analyse territoriale</li>
+          <li>Conception responsable : matériaux durables, architecture intégrée, sobriété énergétique</li>
+          <li>Synergies locales : collaboration avec acteurs publics et privés</li>
+          <li>Vision long terme : résilience logistique et énergétique</li>
+        </ul>
+      </div>
     </section>
 
     <section>
-      <h2>Méthodologie</h2>
-      <ul>
-        <li>Structuration de projet : montage financier, stratégie foncière...</li>
-        <li>Conception responsable : matériaux durables...</li>
-        <li>Synergies locales : collaboration avec acteurs publics et privés</li>
-        <li>Vision long terme : résilience logistique et énergétique</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Domaines d'intervention</h2>
+      <h2>Domaines d’intervention</h2>
+      <img src="556949A0-554B-462F-9B51-CE8BB44B555B.JPG" alt="Domaines d'intervention" style="width:100%; margin:1rem 0; border-radius:8px;" />
       <ul>
         <li>Corridors logistiques multimodaux (rail / route / énergie)</li>
-        <li>Zones d'activités industrielles bas-carbone</li>
+        <li>Zones d’activités industrielles bas-carbone</li>
         <li>Plateformes énergétiques autonomes</li>
         <li>Aménagements urbains à impact positif</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Objectifs des projets</h2>
-      <ul>
-        <li>Infrastructures sobres, performantes, évolutives</li>
-        <li>Réduction de l'empreinte carbone</li>
-        <li>Connexion entre grands axes et territoires locaux</li>
-        <li>Positionner la France comme acteur logistique stratégique</li>
-      </ul>
+    <section class="background-section" style="background-image: url('63357C9F-1CA9-4879-BA73-B5A2EA55C796.JPG');">
+      <div class="overlay-light">
+        <h2>Objectifs des projets</h2>
+        <ul>
+          <li>Infrastructures sobres, performantes, évolutives</li>
+          <li>Réduction de l’empreinte carbone</li>
+          <li>Connexion entre grands axes et territoires locaux</li>
+          <li>Positionner la France comme acteur logistique stratégique</li>
+        </ul>
+      </div>
     </section>
 
     <section>
       <h2>Projet phare : Samarcande Corridor</h2>
-      <p>Corridor logistique et énergétique reliant Marseille – Lyon – Paris...</p>
+      <img src="samarcande capital main.png" alt="Projet Samarcande Corridor" style="width:100%; border-radius: 10px; margin: 1rem 0;" />
+      <p>Corridor logistique et énergétique reliant Marseille – Lyon – Paris. Intègre report modal ferroviaire, autonomie énergétique, valorisation des ressources et une architecture vivante.</p>
     </section>
   </main>
 
@@ -65,7 +78,6 @@
   </footer>
 
   <script>
-    // Défilement doux
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();

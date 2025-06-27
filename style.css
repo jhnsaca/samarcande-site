@@ -10,13 +10,24 @@ body {
 }
 
 header.hero {
-  background: url('samarcande capital main.png') center/cover no-repeat;
+  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   color: #fff;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.7;
 }
 
 header.hero .overlay {
@@ -28,6 +39,8 @@ header.hero .overlay {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 header.hero .branding {
@@ -82,6 +95,42 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Méthodologie 2 colonnes */
+section.with-image {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+section.with-image .image-left {
+  flex: 1 1 40%;
+}
+
+section.with-image .image-left img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+section.with-image .text-right {
+  flex: 1 1 55%;
+}
+
+/* Objectifs avec fond */
+.background-section {
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: white;
+  position: relative;
+}
+
+.background-section .overlay-light {
+  background-color: rgba(0, 47, 75, 0.75);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
 /* Responsive */
 @media screen and (max-width: 768px) {
   header.hero h1 {
@@ -101,5 +150,8 @@ footer {
   }
   header.hero .branding img.logo {
     width: 60px;
+  }
+  section.with-image {
+    flex-direction: column;
   }
 }
