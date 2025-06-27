@@ -1,36 +1,105 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #1a1a1a;
-    line-height: 1.6;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #1a1a1a;
 }
-header {
-    background-color: #002f4b;
-    color: #ffffff;
-    text-align: center;
-    padding: 2rem 1rem;
+
+header.hero {
+  background: url('samarcande capital main.png') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
 }
+
+header.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header.hero .branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+header.hero .branding img.logo {
+  width: 80px;
+  height: auto;
+}
+
+header.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
 .slogan {
-    font-style: italic;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    color: #dcd6c9;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #e0e0e0;
+  margin-top: 1rem;
 }
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
 section {
-    padding: 2rem;
-    border-bottom: 1px solid #e0e0e0;
-    background-color: #fdfdfd;
+  margin-bottom: 3rem;
 }
+
 h2 {
-    color: #002f4b;
+  font-size: 1.8rem;
+  color: #002f4b;
+  margin-bottom: 1rem;
 }
+
+ul {
+  padding-left: 1.5rem;
+}
+
 footer {
-    background-color: #dcd6c9;
-    text-align: center;
+  background-color: #002f4b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  header.hero h1 {
+    font-size: 2rem;
+  }
+  .slogan {
+    font-size: 1rem;
+  }
+  main {
     padding: 1rem;
-    font-size: 0.9rem;
-    color: #000;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  header.hero .branding {
+    flex-direction: column;
+  }
+  header.hero .branding img.logo {
+    width: 60px;
+  }
 }
