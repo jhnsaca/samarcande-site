@@ -32,7 +32,7 @@ header.hero {
 }
 
 header.hero .overlay {
-  background-color: rgba(0, 47, 75, 0.85);
+  background-color: #002f4b;
   padding: 3rem;
   text-align: center;
   width: 100%;
