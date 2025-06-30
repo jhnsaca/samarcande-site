@@ -96,7 +96,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Mise en page alternée texte/image */
 section.with-image {
   display: flex;
   flex-wrap: wrap;
@@ -120,7 +119,6 @@ section.with-image .text-right {
   flex: 1 1 55%;
 }
 
-/* Objectifs avec fond */
 .background-section {
   background-size: cover;
   background-position: center;
@@ -135,7 +133,6 @@ section.with-image .text-right {
   border-radius: 8px;
 }
 
-/* Responsive */
 @media screen and (max-width: 768px) {
   header.hero h1 {
     font-size: 2rem;
